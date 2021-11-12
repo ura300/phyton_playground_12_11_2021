@@ -1,0 +1,7 @@
+def print_till_zero(n):
+   if n == 0:
+       return 1
+   print(n)
+   print_till_zero(n - 1)
+n = int(input("Введите число n: "))
+print_till_zero(n)
