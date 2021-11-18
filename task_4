@@ -1,0 +1,7 @@
+def max_in(list):
+    if len(list) == 1:
+        return list[0]
+    else:
+        return max(list[0], max_in(list[1]))
+list = [1,4,7,10,40,55,0]
+print max_in(list)
